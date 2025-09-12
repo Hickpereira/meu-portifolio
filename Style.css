@@ -1,0 +1,604 @@
+/* ========== GERAL ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ========== BOTÃO CONTATO ========== */
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #004aad;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #004aad;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #004aad;
+    transform: scale(1.1);
+}
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #004aad;
+}
+/* ========== FIM GERAL ========== */
+
+
+/* ========== CABEÇALHO ========== */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: white;
+    transform: scale(1.1);
+    
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-left: 400px;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+
+
+/* ========== FIM CABEÇALHO ========== */
+
+
+/* ========== TOPO DO SITE ========== */
+section.topo-site {
+    padding: 40px 4%;
+}
+
+section.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-site .txt-topo-site h1 {
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-site .txt-topo-site h1 span {
+    color: #004aad;
+}
+
+.topo-site .txt-topo-site p {
+    color: white;
+    margin: 40px 0px;
+}
+
+.topo-site .img-topo-site img {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 30px;
+    }
+}
+/* ========== FIM TOPO DO SITE ========== */
+
+
+/* ========== ESPECIALIDADES ========== */
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 40px;
+    transition: 0.2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px white;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: #004aad;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 26px;
+}
+/* ========== FIM ESPECIALIDADES ========== */
+
+
+
+/* ========== SOBRE ========== */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: white;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #004aad;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-redes button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #004aad;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.2s;
+}
+/* ========== FIM SOBRE ========== */
+
+
+
+/* ========== CURSOS ========== */
+section.cursos {
+    padding: 80px 4%;
+    text-align: center;
+   
+}
+
+section.cursos .flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.cursos .cursos-box {
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-align: left;
+   
+}
+
+.cursos .cursos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px white;
+}
+
+.cursos .cursos-box i {
+    font-size: 50px;
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+.cursos .cursos-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.cursos h2 {
+    margin-bottom: 40px;
+}
+
+.cursos .cursos-box p {
+    font-size: 14px;
+}
+
+.cursos a {
+    text-decoration: none;
+    color: white;
+}
+/* ========== FIM CURSOS ========== */
+
+
+
+/* ========== PORTFÓLIO ========== */
+section.portifólio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #004aad;
+}
+
+section.portifólio .flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.img-port {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 3s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d7;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: 1s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+/* ========== FIM PORTFÓLIO ========== */
+
+
+
+/* ========== FORMULÁRIO ========== */
+section.formulário {
+    padding: 80px 4%;
+}
+
+form {
+    min-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background: #1b1b1b;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #004aad;
+    font-weight: 700;
+    transition: 0.2;
+}
+/* ========== FIM FORMULÁRIO ========== */
+
+
+/* ========== RODAPÉ ========== */
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #004aad;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-bottom: #004aad solid;
+}
+
+footer .line-footer p i {
+    font-size: 22px;
+    color: #004aad;
+}
+
+footer .line-footer p a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+/* ========== FIM RODAPÉ ========== */
+
+
+/* ========== MENU MOBILE ========== */
+.menu-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1020px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .topo-site .img-topo-site img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .topo-site .txt-topo-site h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    section.topo-site {
+        padding: 20px 8%;
+    }
+
+    section.topo-site .flex {
+        gap: 20px;
+    }
+
+    .topo-site .img-topo-site {
+        margin-bottom: 100px;
+    }
+
+    .especialidades .especialidades-box {
+        margin-top: 20px;
+    }
+
+    .especialidades .titulo {
+        margin-bottom: 50px;
+    }
+
+    section.especialidades {
+        padding: 40px 10%;
+    }
+
+    section.sobre {
+        padding: 80px 8%;
+        text-align: center;
+    }
+
+    .sobre .flex {
+        flex-direction: column-reverse;
+    }
+
+    section.portifólio {
+        padding: 80px 6%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 300px;
+        height: 400px;
+        margin: 0 auto 20px auto;
+    }
+
+    section.portifólio .flex {
+        gap: 60px;
+    }
+
+    section.formulário {
+        padding: 80px 8%;
+    }
+
+    form {
+        min-width: 300px;
+    }
+
+
+    footer {
+        text-align: center;
+    }
+
+    .abrir-menu i {
+        color: #004aad;
+        font-size: 40px;
+    }
+
+    .menu-mobile {
+        background-color: black;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999999;
+        width: 0%;
+        overflow: hidden;
+        transition: 0.7s;
+        display: block;
+    }
+
+    .menu-mobile .btn-fechar {
+        padding: 5px 4%;
+    }
+
+    .menu-mobile .btn-fechar i {
+        color: #004aad;
+        font-size: 30px;
+    }
+
+    .menu-mobile nav ul {
+        text-align: right;
+    }
+
+    .menu-mobile nav ul li a {
+        color: white;
+        font-size: 20px;
+        padding: 20px 10%;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .menu-mobile nav ul li a:hover {
+        background-color: #004aad;
+        color: black;
+    }
+
+    .overlay-menu {
+        background-color: #000000a7;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 88888;
+        display: none;
+    }
+
+    .menu-mobile.abrimenu {
+        width: 70%;
+    }
+
+    .menu-mobile.abrimenu ~ .overlay-menu {
+        display: block;
+    }
+
+    .cursos .cursos-box {
+        width: auto;
+    }
+}
+/* ========== FIM MENU MOBILE ========== */
+
+
+
+.botao-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.2s;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+
+.botao-fixo:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 4px white;
+  transform: scale(1.1);
+}

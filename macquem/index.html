@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        
+         <audio id="bg-audio" autoplay loop muted>
+  <source src="ssstik.io_1743309624551 (1).mp3" type="audio/mpeg">
+</audio>
+
+    
+    <img src="download-removebg-preview (1).png" alt="">
+    <div>
+    <nav class="menu-desktop">
+        <ul>
+            <li><a href="#Inicio">Sobre</a></li>
+            <li><a href="#Especialidades">FILMES</a></li>
+                    
+                </ul>
+    </nav>
+   <a href="login.html"><button class="btn-contato">Entrar</button></a>
+    </div>
+
+    
+    
+    </div><!-- btn-contato -->
+        
+        
+    
+    </header>
+<main>
+    <section class="topo-site" id="Inicio" >
+        <div class="interface">
+            <div class="flex">
+                
+                <div class="txt-topo-site">
+                    <h1><span>McQueen.</span></h1>
+                    <p>
+                     Relampago Mcqueen é um novato nas corridas, porém é muito egoísta, no meio do filme Mcqueen se perde numa pequena cidade chamada Radiator Springs na qual conhece Mate, Doc, Sally e outros personagens na qual ajudam a ter uma lição de vida.
+                    </p>
+                    
+                    <div class="btn-contato">
+                    
+                    </div><!-- btn-contato -->
+                </div><!-- txt topo -->
+                
+                <div class="img-topo-site">
+        ok ç           
+                </div><!-- img topo site -->
+            </div><!-- flex -->
+        </div><!-- interface-->
+    </section><!-- topo do site -->
+    
+
+
+
+
+    <section class="carr">
+        <div class="interface">
+            <div class="flex">
+                <h1 class="h"><span>Mais Famosos</span></h1>
+                <div class="carousel-container">
+                    <button class="btn" onclick="moveSlide(-1)"><i class="bi bi-arrow-left-circle"></i></button>
+                    <div class="carousel">
+                        
+                        <img src="tokiomate.jpeg" onclick="alterarTexto(0)">
+                        <img src="carros3.jpeg" onclick="alterarTexto(1)">
+                        <img src="Carros_(2006)_Poster.jpeg" class="active" onclick="alterarTexto(2)">
+                        <img src="carros2.jpeg" onclick="alterarTexto(3)">
+                        <img src="carros na estrada.jpeg" onclick="alterarTexto(4)">
+                        
+                                           </div>
+                    <button class="btn" onclick="moveSlide(1)"><i class="bi bi-arrow-right-circle"></i></button>
+                </div>
+            </div><!-- flex-->
+        </div><!-- interface -->
+    </section>
+    
+    <section class="sobre" id="Especialidades">
+        <div class="interface">
+            <div class="flex">
+                <div class="img-sobre">
+                    <img id="imagem-sobre" src="carros1.png" alt="" style="border-radius: 20px; width: 300px; height: 450px;">
+                </div>
+                <div class="txt-sobre">
+                    <h2><span>Carros</span></h2>
+                    <p id="descricao-sobre">
+                        Carros (2006) é um filme de animação da Disney-Pixar que segue Lightning McQueen, um carro de corrida que, após um erro, fica preso em Radiator Springs. Lá, ele aprende sobre amizade e o verdadeiro significado de sucesso, descobrindo que a vida vai além das corridas.
+                    </p>
+                    <a href="login.html"><button>Ver</button></a>
+                </div>
+            </div><!-- flex-->
+        </div><!-- interface -->
+    </section><!-- sobre -->
+    
+    
+</main>
+<footer>
+    <div class="interface">
+        <div class="line-footer borda">
+            <div class="flex">
+            <div class="logo-footer"><img src="download-removebg-preview (1).png" alt=""></div>
+            
+            
+                    </div>
+        </div>
+        <div class="line-footer">
+            <p>
+                <i class="bi bi-envelope"></i><a href="mailto:">Contato: lightningmcqueen@gmail.com</a>
+            </p>
+        </div>
+        </div>
+    
+</footer>
+
+
+<script>
+   let index = 2;
+const images = document.querySelectorAll('.carousel img');
+const carousel = document.querySelector('.carousel');
+
+const textos = [
+    'Em "Mate no Japão" (Tokyo Mater), Mate vai para Tóquio e é confundido com um carro de drift famoso. Ele participa de corridas sem saber nada sobre drift, mas acaba se saindo bem de forma atrapalhada e se tornando um herói local.',
+    'Carros 3", Mate tem um papel secundário, enquanto Relâmpago McQueen enfrenta um novo desafio com a chegada de carros mais rápidos. No filme, McQueen lida com a ameaça de aposentadoria e a busca por um novo jeito de competir. Mate apoia McQueen, mas sua amizade com ele é testada quando McQueen se concentra em treinamentos com novos técnicos. O filme foca na superação, na adaptação às mudanças e na importância da amizade.', // Texto para a imagem 2
+    'Carros (2006) é um filme de animação da Disney-Pixar que segue Lightning McQueen, um carro de corrida que, após um erro, fica preso em Radiator Springs. Lá, ele aprende sobre amizade e o verdadeiro significado de sucesso.', // Texto para a imagem 3
+    'Em **"Carros 2"**, Mate se torna o protagonista ao ser envolvido em uma trama de espionagem internacional. Ele acompanha **Relâmpago McQueen** em um campeonato de corrida global, mas acaba sendo confundido com um agente secreto. Durante o filme, Mate se envolve em várias missões, enfrentando vilões e salvando o dia com sua forma única de agir. A história explora a amizade entre ele e McQueen, com Mate tendo um papel importante em resgatar seu amigo e revelar a verdadeira identidade dos vilões.', // Texto para a imagem 4
+    'Em "Carros na Estrada" (Cars on the Road), Mate e Relâmpago McQueen embarcam em uma viagem pelo país, explorando novas aventuras e encontrando personagens curiosos ao longo do caminho. A série é uma sequência dos filmes da franquia Carros e foca nas peripécias dos dois amigos enquanto eles cruzam diversos cenários e enfrentam situações engraçadas. A série mantém o espírito de amizade e diversão, com cada episódio apresentando novos desafios e encontros inesperados.'  // Texto para a imagem 5
+];
+
+function alterarTexto(imagemIndex) {
+    // Altera o conteúdo do parágrafo com o id "descricao-sobre"
+    const descricao = document.getElementById('descricao-sobre');
+    descricao.textContent = textos[imagemIndex];
+    
+    // Alterar a imagem principal
+    const imagemSobre = document.getElementById('imagem-sobre');
+    imagemSobre.src = images[imagemIndex].src;
+}
+
+function updateCarousel() {
+    images.forEach((img, i) => {
+        img.classList.remove('active');
+        if (i === index) {
+            img.classList.add('active');
+        }
+    });
+    const offset = -(index - 2) * 170;
+    carousel.style.transform = `translateX(${offset}px)`;
+}
+
+function moveSlide(step) {
+    index += step;
+    if (index >= images.length) index = 0;
+    if (index < 0) index = images.length - 1;
+    updateCarousel();
+}
+
+updateCarousel();
+
+
+  setTimeout(() => {
+    const audio = document.getElementById("bg-audio");
+    audio.muted = false;
+    audio.play().catch(e => console.log("Autoplay bloqueado:", e));
+  }, 500);
+
+
+</script>
+
+</body>
+</html>
